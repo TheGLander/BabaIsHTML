@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "A clone of Baba Is you for HTML!",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "npx standard-version",
