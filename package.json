@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "npx standard-version",
     "build:dev": "NODE_ENV=development && npx webpack",
-    "build:prod": "NODE_ENV=production && npx webpack",
-    "prepare": "npm run build:dev"
+    "build:prod": "NODE_ENV=production && npx webpack"
   },
   "husky": {
     "hooks": {
