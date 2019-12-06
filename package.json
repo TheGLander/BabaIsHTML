@@ -9,11 +9,11 @@
     "release": "npx standard-version",
     "build:dev": "NODE_ENV=development && npx webpack",
     "build:prod": "NODE_ENV=production && npx webpack",
-    "build": "npm run build:prod"
+    "build": "npm run build:prod && cp -r dist public"
   },
   "husky": {
     "hooks": {
-      "pre-comit": "npm run build",
+      "pre-commit": "npm run build:prod",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
