@@ -1,0 +1,48 @@
+{
+  "name": "babaishtml",
+  "version": "1.0.1",
+  "description": "A clone of Baba Is you for HTML!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npx standard-version",
+    "build:dev": "NODE_ENV=development && npx webpack",
+    "build:prod": "NODE_ENV=production && npx webpack",
+    "prepare": "npm run build:dev"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheGLander/BabaIsHTML.git"
+  },
+  "keywords": [
+    "zuckor",
+    "puzzle"
+  ],
+  "author": "G lander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheGLander/BabaIsHTML/issues"
+  },
+  "homepage": "https://github.com/TheGLander/BabaIsHTML#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "commitlint": "^8.2.0",
+    "husky": "^3.1.0",
+    "standard-version": "^7.0.1",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.5",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.6",
+    "babel-minify": "^0.5.1",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "html-webpack-plugin": "^3.2.0"
+  }
+}
