@@ -13,6 +13,7 @@
   },
   "husky": {
     "hooks": {
+      "pre-comit": "npm run build",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
